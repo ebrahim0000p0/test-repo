@@ -31,7 +31,7 @@ pipeline {
         steps {
             sh 'docker tag ${dockerImageNameApp}:${dockerVersionApp} ${dockerHubUserName}/${dockerImageNameApp}:${dockerVersionApp} && docker push ${dockerHubUserName}/${dockerImageNameApp}:${dockerVersionApp}'
             script {
-                    AppImageName='${dockerHubUserName}/${dockerImageNameApp}:${dockerVersionApp}'
+                    AppImageName="${dockerHubUserName}/${dockerImageNameApp}:${dockerVersionApp}"
                 echo "${AppImageName}"
                 }
         }
