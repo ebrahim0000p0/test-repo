@@ -4,7 +4,7 @@ pipeline {
     parameters {        
         string(name: 'dockerHubUserName', defaultValue: 'userName', description: 'UserName for docker hub')
         password(name: 'dockerHubPassword', defaultValue: 'SECRET', description: 'password for dockerhub')    
-        string(name: 'dockerImageNameApp', defaultValue: 'ImageName', description: 'image name for spp')
+        string(name: 'dockerImageNameApp', defaultValue: 'imageName', description: 'image name for spp')
         string(name: 'dockerVersionApp', defaultValue: '1.0', description: 'docker image version for app')
     }
 
