@@ -21,8 +21,9 @@ pipeline {
 
     stage('Build Docker Image For App Tier') {
         steps {
-            sh 'cd ${AppDockerFile}'
-            sh 'docker build -t ${dockerImageNameApp}:${dockerVersionApp} .'
+             
+            
+            sh 'docker build -t ${dockerImageNameApp}:${dockerVersionApp} ./${AppDockerFile}/'
         }
     }
  
