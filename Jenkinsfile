@@ -9,7 +9,7 @@ pipeline {
     }
 
     environment {
-        AppDockerFile = './application-tier/Dockerfile'
+        AppDockerFile = './application-tier'
         AppImageName=''
     }
     stages {
