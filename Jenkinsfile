@@ -23,7 +23,7 @@ pipeline {
         steps {
              
             
-            sh 'docker build -t ${dockerImageNameApp}:${dockerVersionApp} ./${AppDockerFile}/'
+            sh 'docker build -t ${dockerImageNameApp}:${dockerVersionApp} ${AppDockerFile}'
         }
     }
  
